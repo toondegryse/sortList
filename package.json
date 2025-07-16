@@ -1,0 +1,19 @@
+{
+  "name": "fire-finance-tracker",
+  "version": "1.0.0",
+  "description": "A comprehensive personal finance tracking app with FIRE goals",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["finance", "FIRE", "budgeting", "investments"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
